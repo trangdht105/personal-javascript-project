@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+* {  box-sizing: border-box;}
+.container{ width: 1140px;margin: auto}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+	}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*-------------- THU VIEN STYLE KIEU FLEX---------------*/
+.d-flex{ display: flex}
+.justify-content-center{justify-content:center}
+.justify-content-start{justify-content:flex-start}
+.justify-content-end{justify-content: flex-end}
+.justify-content-around{justify-content:space-around}
+.justify-content-between{justify-content:space-between}
+.justify-content-end {
+	justify-content: flex-end;
+}
+.verticle-center-flex{ align-items: center}
+.verticle-top-flex{ align-items:flex-start}
+.verticle-bottom-flex{ align-items:flex-end}
+.verticle-stretch-flex{   align-items: stretch}
+
+.flex-wrap{flex-wrap: wrap}
+.flex-nowrap{flex-wrap: nowrap}
+.flex-direction-column{ flex-direction: column}
+.flex-direction-thuan{ flex-direction: row}
+.flex-direction-nguoc{ flex-direction: row-reverse}
+/*-----------------------------------*/
+/* -------màu text mặc định cho text có link--chữ màu xám đen/ khi hover có màu cam---------*/
+a{ color: white; text-decoration: none}
+a:hover{color:  rgb(214, 214, 214);}
+
+/*------------style hệ thống màu chính (xanh-primary)-------*/
+.bg-primary{ background: #056CB6}
+.text-primary{ color: #056CB6}
+.btn-primary{background:white; padding: 10px 20px; border:1px solid white; color:red; cursor: pointer}
+.btn-primary:hover{background:none;border: 1px solid #4e423d;;color:#4e423d;}
+/* ------------hệ thống màu phụ (cam/secondary)------------*/
+.bg-secondary{background: #F2C94C}
+.text-secondary{ color: #F2C94C}
+.btn-secondary{background: #a86f57; padding: 10px 15px;border: 0px solid #848878; color: White; cursor: pointer;transition-duration: 0.6s}
+.btn-secondary:hover{background:none;border: 2px solid #a86f57;color: #4e423d;box-shadow: inset 0 0 0 0 #ffffff; }
+/* ------------hệ thống màu trắng (cho các box và text cần màu trắng trong thiết kế)------------*/
+.bg-light{ background: #fff}
+.text-light{ color:#fff}
+
+
+.float-left{ float: left}
+.float-right{ float:right}
+.text-right{ text-align: right}
+.text-center{ text-align: center}
+
+.p-0{padding:0px}
+.px-20{padding: 0 20px}
+.p-20{padding: 25px}
+.mt-10{margin-top: 15px}
+.mx-0{margin: 0 auto}
+.p-15{padding: 15px}
+.py-20{padding: 20px 0}
+.py-40{padding: 40px 0}
+.mr-10{ margin-right: 10px}.ml-10{ margin-left: 10px}
+.pr-10{ padding-right: 10px}.pl-10{ padding-left: 10px}
+.py-10{ padding: 10px 0}.px-10{ padding: 0 10px}
+.my-10{ margin: 10px 0} .mx-10{ margin: 0 10px}
+/*-----------------------------*/
+.border-bottom-secondary{ border-bottom: 1px solid #F2C94C; padding-left: 5px}
+.border-bottom-primary{ border-bottom-color: 1px solid #056CB6;}
+/*------------------------*/
+.img-fluid{max-width: 100%; height: auto}
+.img-rounded{ border-radius: 50%}
+.w-100{ width: 100%}
+.form-control{ width: 80%; float: left; border: 1px solid #eee; padding: 10px; display: inline}
+.mot-hang{display: inline}
+html {
+  scroll-behavior: smooth;
+}
+
+section{padding:30px 0}
